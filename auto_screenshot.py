@@ -103,7 +103,7 @@ class AutoScreenshotApp:
         except Exception as e:
             self.status_label.config(text=f"エラー: {str(e)}")
             
-        self.root.after(100, self.check_screen)
+        self.root.after(5000, self.check_screen)
         
     def save_screenshot(self, screenshot):
         try:
